@@ -19,6 +19,7 @@ func _process(delta):
 	velocity = direction * move_speed
 	
 	if SetState() == true || SetDirection() == true:
+		print(SetState())
 		UpdateAnimation()
 
 	pass

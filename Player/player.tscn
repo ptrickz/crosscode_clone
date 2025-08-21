@@ -1,15 +1,15 @@
 [gd_scene load_steps=11 format=3 uid="uid://ceyem6xkenfem"]
 
-[ext_resource type="Texture2D" uid="uid://dofnb6by578ax" path="res://Player/Sprites/ExamplePlayerSprite.png" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://dv741wes0ang6" path="res://Player/Sprites/char1.png" id="1_l8h54"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_edjgo"]
 
 [sub_resource type="Animation" id="Animation_4ntmi"]
-length = 0.001
+length = 0.4
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D/ExamplePlayerSprite:frame")
+tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -26,31 +26,31 @@ loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D/ExamplePlayerSprite:frame")
+tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [0, 1, 2]
+"values": [0]
 }
 
 [sub_resource type="Animation" id="Animation_gwnis"]
 resource_name = "idle_side"
-length = 0.4
+length = 0.6
 loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D/ExamplePlayerSprite:frame")
+tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [14, 15, 16]
+"values": [16]
 }
 
 [sub_resource type="Animation" id="Animation_btcbx"]
@@ -60,65 +60,65 @@ loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D/ExamplePlayerSprite:frame")
+tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [7, 8, 9]
+"values": [8]
 }
 
 [sub_resource type="Animation" id="Animation_k53q1"]
 resource_name = "walk_down"
-length = 0.3
-loop_mode = 2
+length = 0.5
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D/ExamplePlayerSprite:frame")
+tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [3, 4, 5, 6]
+"values": [32, 33, 34, 35, 36, 37]
 }
 
 [sub_resource type="Animation" id="Animation_fhl08"]
 resource_name = "walk_side"
-length = 0.3
-loop_mode = 2
+length = 0.5
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D/ExamplePlayerSprite:frame")
+tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [17, 18, 19, 20]
+"values": [48, 49, 50, 51, 52, 53]
 }
 
 [sub_resource type="Animation" id="Animation_vtle1"]
 resource_name = "walk_up"
-length = 0.3
-loop_mode = 2
+length = 0.5
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D/ExamplePlayerSprite:frame")
+tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [10, 11, 12, 13]
+"values": [40, 41, 42, 43, 44, 45]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4ntmi"]
@@ -138,11 +138,9 @@ _data = {
 shape = SubResource("CircleShape2D_edjgo")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-
-[node name="ExamplePlayerSprite" type="Sprite2D" parent="Sprite2D"]
-position = Vector2(0, -21)
-texture = ExtResource("1_4flbx")
-hframes = 21
+texture = ExtResource("1_l8h54")
+hframes = 8
+vframes = 8
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
